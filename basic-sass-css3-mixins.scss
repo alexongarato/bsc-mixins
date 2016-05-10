@@ -1,0 +1,112 @@
+/* BASIC SASS CSS3 MIXINS (init)
+ https://github.com/alexongarato/basic-sass-css3-mixins.git
+*/
+@mixin transition($transition...) 
+{
+	-moz-transition:    $transition;
+	-ms-transition:     $transition;
+	-o-transition:      $transition;
+	-webkit-transition: $transition;
+	transition:         $transition;
+}
+
+@mixin placeholder($color:#ffffff, $fontStyle: italic)
+{
+	&::-webkit-input-placeholder 
+	{
+		color: $color;
+		font-style: $fontStyle;
+		text-transform: uppercase;
+		text-indent: 5px;
+	}
+
+	&:-moz-placeholder 
+	{ /* Firefox 18- */
+		color: $color;
+		font-style: $fontStyle;
+		text-transform: uppercase;
+		text-indent: 5px;
+	}
+
+	&::-moz-placeholder 
+	{  /* Firefox 19+ */
+		color: $color;
+		font-style: $fontStyle;
+		text-transform: uppercase;
+		text-indent: 5px;
+	}
+
+	&:-ms-input-placeholder 
+	{  
+		color: $color;
+		font-style: $fontStyle;
+		text-transform: uppercase;
+		text-indent: 5px;
+	}
+}
+
+@mixin reset()
+{
+	*
+	{
+		margin: 0;
+		padding: 0;
+		text-indent: 0;
+		text-align: left;
+		border-spacing: 0;
+		border: medium none;
+		font-weight: normal;
+		text-decoration: none;
+		list-style: none outside none;
+		background: none repeat scroll 0 0 transparent;
+	}
+}
+
+@mixin mobile-webapp-reset()
+{
+	*
+	{
+		outline : none;
+		user-select:none;
+		-o-user-select:none;
+		-ms-user-select:none;
+		-moz-user-select:none;
+		-khtml-user-select:none;
+		-webkit-user-select:none;
+		-moz-user-drag: none;
+		-webkit-user-drag: none;
+		box-sizing : border-box;
+		-webkit-touch-callout: none;
+		font-smoothing : antialiased;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing : antialiased;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+
+	input,textarea 
+	{
+		user-select:text;
+		-o-user-select:text;
+		-ms-user-select:text;
+		-moz-user-select:text;
+		-khtml-user-select:text;
+		-webkit-user-select:text;
+	}
+}
+
+@mixin font-face($fontName, $fileName, $version:1)
+{
+	@font-face 
+	{
+	    font-family: "{$fontName}";
+	    src: url("#{$fileName}.eot?v=#{$version}"); /* IE9 Compat Modes */
+	    src: url("#{$fileName}.eot?v=#{$version}#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	         url("#{$fileName}.woff2?v=#{$version}") format("woff2"), /* Modern Browsers */
+	         url("#{$fileName}.woff?v=#{$version}") format("woff"), /* Modern Browsers */
+	         url("#{$fileName}.ttf?v=#{$version}") format("truetype");
+	    font-style: normal;
+	    font-weight: normal;
+	    text-rendering: auto;
+	}
+}
+/* BASIC SASS CSS3 MIXINS (end) */
