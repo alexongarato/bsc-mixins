@@ -30,3 +30,6 @@ A basic, clean and minimalist SASS CSS3 Mixin library
 ```css3
 @include clip-path(polygon(nonzero, 1.05% 52%, 2.05% 3%, 31.85% 3%, 52.4% 8%, 79.45% 6%, 99.3% 2%, 99.3% 95%, 73.65% 101%, 48.65% 98%, 22.25% 97%, 3.75% 100%));
 ```
+```css3
+@include radio-button-image-replacement(#ff0000); /* radio button image replacement */
+```

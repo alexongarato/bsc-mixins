@@ -1,5 +1,18 @@
 /* BASIC SASS CSS3 MIXINS (init)
  https://github.com/alexongarato/basic-sass-css3-mixins.git
+ */
+/* HTML STRUCTURE
+<label class="radio">
+	<input type="radio" name="input-name" value="1" />
+	<img src="[image-url]">
+</label>
+
+CSS3 USAGE
+
+label.radio
+{
+	@include radio-button-image-replacement(2px, #ff0000);
+}
 */
 /* BASIC SASS CSS3 MIXINS (end) */
 
