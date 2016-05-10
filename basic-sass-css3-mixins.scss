@@ -10,7 +10,7 @@
 	transition:         $transition;
 }
 
-@mixin placeholder($color:#ffffff, $fontStyle: italic)
+@mixin placeholder($color:#ffffff, $fontStyle: normal)
 {
 	&::-webkit-input-placeholder 
 	{
