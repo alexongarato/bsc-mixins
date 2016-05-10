@@ -2,7 +2,9 @@
 A basic, clean and minimalist SASS CSS3 Mixin library
 
 ## Import
+```css3
 @import "basic-sass-css3-mixins/basic-sass-css3-mixins";
+```
 
 ## Usage
 
