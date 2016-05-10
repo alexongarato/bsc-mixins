@@ -62,7 +62,7 @@
 	}
 }
 
-@mixin mobile-webapp-reset()
+@mixin mobile-reset()
 {
 	*
 	{
@@ -109,4 +109,26 @@
 	    text-rendering: auto;
 	}
 }
+
+@mixin border-radius($radius)
+{
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) 
+{
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+@mixin clip-path($poligons)
+{
+    -webkit-clip-path: $poligons;
+    -moz-clip-path: $poligons;
+    -ms-clip-path: $poligons;
+    clip-path: $poligons;
+}
+
 /* BASIC SASS CSS3 MIXINS (end) */

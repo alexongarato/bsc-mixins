@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA;;EAEE;AA6GF,kCAAkC",
+"mappings": "AAAA;;EAEE;AAmIF,kCAAkC",
 "sources": ["basic-sass-css3-mixins.scss"],
 "names": [],
 "file": "basic-sass-css3-mixins.css"
