@@ -1,17 +1,43 @@
-/* BASIC SASS CSS3 MIXINS (init)
- https://github.com/alexongarato/bsc-mixins.git
- */
-/* HTML STRUCTURE
-<label class="radio">
-	<input type="radio" name="input-name" value="1" />
-	<img src="[image-url]">
-</label>
-
-CSS3 USAGE
+/* BSC-MIXINS:init (https://github.com/alexongarato/bsc-mixins.git) */
+/*#############
+Usage example: @include transition(background-color 0.1s, opacity 0.3s);
+#############*/
+/*#############
+Usage example: @include placeholder(#ffffff, italic);
+#############*/
+/*#############
+Usage example: @include reset();
+#############*/
+/*#############
+Usage example: @include mobile-reset();
+#############*/
+/*#############
+Usage example: @include font-face("Open Sans", "OpenSans-Regular", $version:5);
+#############*/
+/*#############
+Usage example: @include border-radius(20%);
+#############*/
+/*#############
+Usage example: @include background-opacity(#cccccc, $opacity: 0.3);
+#############*/
+/*#############
+Usage example: @include clip-path(polygon(nonzero, 1.05% 52%, 2.05% 3%, 31.85% 3%, 52.4% 8%, 79.45% 6%, 99.3% 2%, 99.3% 95%, 73.65% 101%, 48.65% 98%, 22.25% 97%, 3.75% 100%));
+#############*/
+/*#############
+Usage example:
+<!--HTML STRUCTURE:init-->
+	<label class="radio">
+		<input type="radio" name="input-name" value="1" />
+		<img src="[image-url]">
+	</label>
+<!--HTML STRUCTURE:end-->
 
 label.radio
 {
 	@include radio-button-image-replacement(2px, #ff0000);
 }
-*/
-/* BASIC SASS CSS3 MIXINS (end) */
+#############*/
+/*#############
+Usage example: @include transform(matrix(1.00,0.00,0.00,1.00,50,0))
+#############*/
+/* BSC-MIXINS:end */
