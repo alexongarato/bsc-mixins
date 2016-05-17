@@ -1,5 +1,5 @@
 # bsc-mixins
-A basic, clean and minimalist SASS CSS3 Mixin library.
+A basic SASS CSS3 Mixins (basic "must have" mixins).
 
 ## Import
 ```css3
