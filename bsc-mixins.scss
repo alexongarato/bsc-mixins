@@ -89,9 +89,11 @@ Usage example: @include mobile-reset();
 		-webkit-user-drag: none;
 		box-sizing : border-box;
 		-webkit-touch-callout: none;
+		font-smooth: never;
 		font-smoothing : antialiased;
-		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing : antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizeLegibility;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 	}
 
