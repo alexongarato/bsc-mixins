@@ -206,4 +206,17 @@ Usage example: @include transform(matrix(1.00,0.00,0.00,1.00,50,0))
 	-webkit-transform:$props;
 }
 
+/*#############
+Usage example: @include noselect()
+#############*/
+@mixin noselect 
+{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
 /* BSC-MIXINS:end */
